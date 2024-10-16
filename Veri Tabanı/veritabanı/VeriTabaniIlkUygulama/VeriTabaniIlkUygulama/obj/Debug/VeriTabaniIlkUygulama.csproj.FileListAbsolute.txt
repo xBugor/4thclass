@@ -1,0 +1,10 @@
+D:\Dersler\dersler 41\Veri Tabanı\veritabanı\VeriTabaniIlkUygulama\VeriTabaniIlkUygulama\bin\Debug\VeriTabaniIlkUygulama.exe.config
+D:\Dersler\dersler 41\Veri Tabanı\veritabanı\VeriTabaniIlkUygulama\VeriTabaniIlkUygulama\bin\Debug\VeriTabaniIlkUygulama.exe
+D:\Dersler\dersler 41\Veri Tabanı\veritabanı\VeriTabaniIlkUygulama\VeriTabaniIlkUygulama\bin\Debug\VeriTabaniIlkUygulama.pdb
+D:\Dersler\dersler 41\Veri Tabanı\veritabanı\VeriTabaniIlkUygulama\VeriTabaniIlkUygulama\obj\Debug\VeriTabaniIlkUygulama.csproj.AssemblyReference.cache
+D:\Dersler\dersler 41\Veri Tabanı\veritabanı\VeriTabaniIlkUygulama\VeriTabaniIlkUygulama\obj\Debug\VeriTabaniIlkUygulama.Form1.resources
+D:\Dersler\dersler 41\Veri Tabanı\veritabanı\VeriTabaniIlkUygulama\VeriTabaniIlkUygulama\obj\Debug\VeriTabaniIlkUygulama.Properties.Resources.resources
+D:\Dersler\dersler 41\Veri Tabanı\veritabanı\VeriTabaniIlkUygulama\VeriTabaniIlkUygulama\obj\Debug\VeriTabaniIlkUygulama.csproj.GenerateResource.cache
+D:\Dersler\dersler 41\Veri Tabanı\veritabanı\VeriTabaniIlkUygulama\VeriTabaniIlkUygulama\obj\Debug\VeriTabaniIlkUygulama.csproj.CoreCompileInputs.cache
+D:\Dersler\dersler 41\Veri Tabanı\veritabanı\VeriTabaniIlkUygulama\VeriTabaniIlkUygulama\obj\Debug\VeriTabaniIlkUygulama.exe
+D:\Dersler\dersler 41\Veri Tabanı\veritabanı\VeriTabaniIlkUygulama\VeriTabaniIlkUygulama\obj\Debug\VeriTabaniIlkUygulama.pdb
