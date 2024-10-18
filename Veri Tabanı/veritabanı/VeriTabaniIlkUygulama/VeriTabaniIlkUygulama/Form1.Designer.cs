@@ -30,37 +30,37 @@
         {
             this.components = new System.ComponentModel.Container();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.ogrenciEvDataBaseDataSet = new VeriTabaniIlkUygulama.OgrenciEvDataBaseDataSet();
-            this.tblOgrenciBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.tbl_OgrenciTableAdapter = new VeriTabaniIlkUygulama.OgrenciEvDataBaseDataSetTableAdapters.Tbl_OgrenciTableAdapter();
             this.ogranciNumarasıDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.adDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.soyadDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.sehirDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.bursDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.bolumDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.tblOgrenciBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.ogrenciEvDataBaseDataSet = new VeriTabaniIlkUygulama.OgrenciEvDataBaseDataSet();
+            this.tbl_OgrenciTableAdapter = new VeriTabaniIlkUygulama.OgrenciEvDataBaseDataSetTableAdapters.Tbl_OgrenciTableAdapter();
             this.btn_listele = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.Soyad = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.txt_no = new System.Windows.Forms.TextBox();
-            this.txt_ad = new System.Windows.Forms.TextBox();
-            this.txt_soyad = new System.Windows.Forms.TextBox();
-            this.txt_burs = new System.Windows.Forms.TextBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.txt_bolum = new System.Windows.Forms.TextBox();
-            this.btn_kaydet = new System.Windows.Forms.Button();
-            this.btn_sil = new System.Windows.Forms.Button();
-            this.btn_guncelle = new System.Windows.Forms.Button();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.txt_burs = new System.Windows.Forms.TextBox();
+            this.txt_soyad = new System.Windows.Forms.TextBox();
+            this.txt_ad = new System.Windows.Forms.TextBox();
+            this.txt_no = new System.Windows.Forms.TextBox();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.Soyad = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.btn_temizle = new System.Windows.Forms.Button();
+            this.btn_guncelle = new System.Windows.Forms.Button();
+            this.btn_sil = new System.Windows.Forms.Button();
+            this.btn_kaydet = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ogrenciEvDataBaseDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tblOgrenciBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ogrenciEvDataBaseDataSet)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.SuspendLayout();
@@ -82,20 +82,7 @@
             this.dataGridView1.Size = new System.Drawing.Size(715, 150);
             this.dataGridView1.TabIndex = 0;
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
-            // 
-            // ogrenciEvDataBaseDataSet
-            // 
-            this.ogrenciEvDataBaseDataSet.DataSetName = "OgrenciEvDataBaseDataSet";
-            this.ogrenciEvDataBaseDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // tblOgrenciBindingSource
-            // 
-            this.tblOgrenciBindingSource.DataMember = "Tbl_Ogrenci";
-            this.tblOgrenciBindingSource.DataSource = this.ogrenciEvDataBaseDataSet;
-            // 
-            // tbl_OgrenciTableAdapter
-            // 
-            this.tbl_OgrenciTableAdapter.ClearBeforeFill = true;
+            this.dataGridView1.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
             // ogranciNumarasıDataGridViewTextBoxColumn
             // 
@@ -134,6 +121,20 @@
             this.bolumDataGridViewTextBoxColumn.HeaderText = "Bolum";
             this.bolumDataGridViewTextBoxColumn.Name = "bolumDataGridViewTextBoxColumn";
             // 
+            // tblOgrenciBindingSource
+            // 
+            this.tblOgrenciBindingSource.DataMember = "Tbl_Ogrenci";
+            this.tblOgrenciBindingSource.DataSource = this.ogrenciEvDataBaseDataSet;
+            // 
+            // ogrenciEvDataBaseDataSet
+            // 
+            this.ogrenciEvDataBaseDataSet.DataSetName = "OgrenciEvDataBaseDataSet";
+            this.ogrenciEvDataBaseDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // tbl_OgrenciTableAdapter
+            // 
+            this.tbl_OgrenciTableAdapter.ClearBeforeFill = true;
+            // 
             // btn_listele
             // 
             this.btn_listele.Location = new System.Drawing.Point(178, 209);
@@ -165,102 +166,12 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "groupBox1";
             // 
-            // groupBox2
+            // txt_bolum
             // 
-            this.groupBox2.Controls.Add(this.btn_temizle);
-            this.groupBox2.Controls.Add(this.btn_guncelle);
-            this.groupBox2.Controls.Add(this.btn_sil);
-            this.groupBox2.Controls.Add(this.btn_listele);
-            this.groupBox2.Controls.Add(this.btn_kaydet);
-            this.groupBox2.Location = new System.Drawing.Point(489, 38);
-            this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(259, 238);
-            this.groupBox2.TabIndex = 3;
-            this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "groupBox2";
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(15, 16);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(58, 13);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "OgrenciNo";
-            // 
-            // Soyad
-            // 
-            this.Soyad.AutoSize = true;
-            this.Soyad.Location = new System.Drawing.Point(26, 51);
-            this.Soyad.Name = "Soyad";
-            this.Soyad.Size = new System.Drawing.Size(20, 13);
-            this.Soyad.TabIndex = 1;
-            this.Soyad.Text = "Ad";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(26, 86);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(37, 13);
-            this.label3.TabIndex = 2;
-            this.label3.Text = "Soyad";
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(26, 123);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(31, 13);
-            this.label4.TabIndex = 3;
-            this.label4.Text = "Sehir";
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(29, 161);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(28, 13);
-            this.label5.TabIndex = 4;
-            this.label5.Text = "Burs";
-            this.label5.Click += new System.EventHandler(this.label5_Click);
-            // 
-            // txt_no
-            // 
-            this.txt_no.Location = new System.Drawing.Point(111, 16);
-            this.txt_no.Name = "txt_no";
-            this.txt_no.Size = new System.Drawing.Size(100, 20);
-            this.txt_no.TabIndex = 5;
-            // 
-            // txt_ad
-            // 
-            this.txt_ad.Location = new System.Drawing.Point(111, 51);
-            this.txt_ad.Name = "txt_ad";
-            this.txt_ad.Size = new System.Drawing.Size(100, 20);
-            this.txt_ad.TabIndex = 6;
-            // 
-            // txt_soyad
-            // 
-            this.txt_soyad.Location = new System.Drawing.Point(111, 86);
-            this.txt_soyad.Name = "txt_soyad";
-            this.txt_soyad.Size = new System.Drawing.Size(100, 20);
-            this.txt_soyad.TabIndex = 7;
-            // 
-            // txt_burs
-            // 
-            this.txt_burs.Location = new System.Drawing.Point(111, 158);
-            this.txt_burs.Name = "txt_burs";
-            this.txt_burs.Size = new System.Drawing.Size(100, 20);
-            this.txt_burs.TabIndex = 8;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(29, 191);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(36, 13);
-            this.label2.TabIndex = 9;
-            this.label2.Text = "Bölüm";
+            this.txt_bolum.Location = new System.Drawing.Point(111, 188);
+            this.txt_bolum.Name = "txt_bolum";
+            this.txt_bolum.Size = new System.Drawing.Size(100, 20);
+            this.txt_bolum.TabIndex = 11;
             // 
             // comboBox1
             // 
@@ -351,40 +262,105 @@
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(121, 21);
             this.comboBox1.TabIndex = 10;
+            this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
-            // txt_bolum
+            // label2
             // 
-            this.txt_bolum.Location = new System.Drawing.Point(111, 188);
-            this.txt_bolum.Name = "txt_bolum";
-            this.txt_bolum.Size = new System.Drawing.Size(100, 20);
-            this.txt_bolum.TabIndex = 11;
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(29, 191);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(36, 13);
+            this.label2.TabIndex = 9;
+            this.label2.Text = "Bölüm";
             // 
-            // btn_kaydet
+            // txt_burs
             // 
-            this.btn_kaydet.Location = new System.Drawing.Point(32, 40);
-            this.btn_kaydet.Name = "btn_kaydet";
-            this.btn_kaydet.Size = new System.Drawing.Size(75, 23);
-            this.btn_kaydet.TabIndex = 0;
-            this.btn_kaydet.Text = "Kisi Kaydet";
-            this.btn_kaydet.UseVisualStyleBackColor = true;
+            this.txt_burs.Location = new System.Drawing.Point(111, 158);
+            this.txt_burs.Name = "txt_burs";
+            this.txt_burs.Size = new System.Drawing.Size(100, 20);
+            this.txt_burs.TabIndex = 8;
             // 
-            // btn_sil
+            // txt_soyad
             // 
-            this.btn_sil.Location = new System.Drawing.Point(32, 69);
-            this.btn_sil.Name = "btn_sil";
-            this.btn_sil.Size = new System.Drawing.Size(75, 23);
-            this.btn_sil.TabIndex = 1;
-            this.btn_sil.Text = "Kayıt Sil";
-            this.btn_sil.UseVisualStyleBackColor = true;
+            this.txt_soyad.Location = new System.Drawing.Point(111, 86);
+            this.txt_soyad.Name = "txt_soyad";
+            this.txt_soyad.Size = new System.Drawing.Size(100, 20);
+            this.txt_soyad.TabIndex = 7;
             // 
-            // btn_guncelle
+            // txt_ad
             // 
-            this.btn_guncelle.Location = new System.Drawing.Point(32, 98);
-            this.btn_guncelle.Name = "btn_guncelle";
-            this.btn_guncelle.Size = new System.Drawing.Size(75, 23);
-            this.btn_guncelle.TabIndex = 2;
-            this.btn_guncelle.Text = "Güncelle";
-            this.btn_guncelle.UseVisualStyleBackColor = true;
+            this.txt_ad.Location = new System.Drawing.Point(111, 51);
+            this.txt_ad.Name = "txt_ad";
+            this.txt_ad.Size = new System.Drawing.Size(100, 20);
+            this.txt_ad.TabIndex = 6;
+            // 
+            // txt_no
+            // 
+            this.txt_no.Enabled = false;
+            this.txt_no.Location = new System.Drawing.Point(111, 16);
+            this.txt_no.Name = "txt_no";
+            this.txt_no.Size = new System.Drawing.Size(100, 20);
+            this.txt_no.TabIndex = 5;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(29, 161);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(28, 13);
+            this.label5.TabIndex = 4;
+            this.label5.Text = "Burs";
+            this.label5.Click += new System.EventHandler(this.label5_Click);
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(26, 123);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(31, 13);
+            this.label4.TabIndex = 3;
+            this.label4.Text = "Sehir";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(26, 86);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(37, 13);
+            this.label3.TabIndex = 2;
+            this.label3.Text = "Soyad";
+            // 
+            // Soyad
+            // 
+            this.Soyad.AutoSize = true;
+            this.Soyad.Location = new System.Drawing.Point(26, 51);
+            this.Soyad.Name = "Soyad";
+            this.Soyad.Size = new System.Drawing.Size(20, 13);
+            this.Soyad.TabIndex = 1;
+            this.Soyad.Text = "Ad";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(15, 16);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(58, 13);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "OgrenciNo";
+            // 
+            // groupBox2
+            // 
+            this.groupBox2.Controls.Add(this.btn_temizle);
+            this.groupBox2.Controls.Add(this.btn_guncelle);
+            this.groupBox2.Controls.Add(this.btn_sil);
+            this.groupBox2.Controls.Add(this.btn_listele);
+            this.groupBox2.Controls.Add(this.btn_kaydet);
+            this.groupBox2.Location = new System.Drawing.Point(489, 38);
+            this.groupBox2.Name = "groupBox2";
+            this.groupBox2.Size = new System.Drawing.Size(259, 238);
+            this.groupBox2.TabIndex = 3;
+            this.groupBox2.TabStop = false;
+            this.groupBox2.Text = "groupBox2";
             // 
             // btn_temizle
             // 
@@ -394,12 +370,43 @@
             this.btn_temizle.TabIndex = 3;
             this.btn_temizle.Text = "Temizle";
             this.btn_temizle.UseVisualStyleBackColor = true;
+            this.btn_temizle.Click += new System.EventHandler(this.btn_temizle_Click);
+            // 
+            // btn_guncelle
+            // 
+            this.btn_guncelle.Location = new System.Drawing.Point(32, 98);
+            this.btn_guncelle.Name = "btn_guncelle";
+            this.btn_guncelle.Size = new System.Drawing.Size(75, 23);
+            this.btn_guncelle.TabIndex = 2;
+            this.btn_guncelle.Text = "Güncelle";
+            this.btn_guncelle.UseVisualStyleBackColor = true;
+            this.btn_guncelle.Click += new System.EventHandler(this.btn_guncelle_Click);
+            // 
+            // btn_sil
+            // 
+            this.btn_sil.Location = new System.Drawing.Point(32, 69);
+            this.btn_sil.Name = "btn_sil";
+            this.btn_sil.Size = new System.Drawing.Size(75, 23);
+            this.btn_sil.TabIndex = 1;
+            this.btn_sil.Text = "Kayıt Sil";
+            this.btn_sil.UseVisualStyleBackColor = true;
+            this.btn_sil.Click += new System.EventHandler(this.btn_sil_Click);
+            // 
+            // btn_kaydet
+            // 
+            this.btn_kaydet.Location = new System.Drawing.Point(32, 40);
+            this.btn_kaydet.Name = "btn_kaydet";
+            this.btn_kaydet.Size = new System.Drawing.Size(75, 23);
+            this.btn_kaydet.TabIndex = 0;
+            this.btn_kaydet.Text = "Kisi Kaydet";
+            this.btn_kaydet.UseVisualStyleBackColor = true;
+            this.btn_kaydet.Click += new System.EventHandler(this.btn_kaydet_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.SystemColors.MenuHighlight;
+            this.BackColor = System.Drawing.Color.DarkSlateBlue;
             this.ClientSize = new System.Drawing.Size(901, 608);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
@@ -408,8 +415,8 @@
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ogrenciEvDataBaseDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tblOgrenciBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ogrenciEvDataBaseDataSet)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.groupBox2.ResumeLayout(false);
